@@ -21,9 +21,3 @@ public class AppServlet extends HttpServlet {
 		}
 	}
 }
-
-/*
-- Dobře, takže struktura bude tato:
-	- http-router (HttpRouterTestsRouter)
-		- nazev-testu (dál už si to vezme konkrétní router nebo controller pro test - asi na to budu možná vytvářet balíčky, ale to uvidím)
-*/

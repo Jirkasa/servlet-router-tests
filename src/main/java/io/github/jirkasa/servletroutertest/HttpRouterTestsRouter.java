@@ -1,6 +1,7 @@
 package io.github.jirkasa.servletroutertest;
 
 import io.github.jirkasa.servletrouter.HttpRouter;
+import io.github.jirkasa.servletroutertest.httprouter.Subrouter2Controller;
 import io.github.jirkasa.servletroutertest.httprouter.SubrouterController;
 import io.github.jirkasa.servletroutertest.httprouter.TestController;
 import io.github.jirkasa.servletroutertest.httprouter.TestErrorController;
@@ -16,6 +17,10 @@ public class HttpRouterTestsRouter extends HttpRouter {
 		HttpRouter subRouter = new HttpRouter();
 		subRouter.register(SubrouterController.class);
 		register("sub-router", subRouter);
+		
+		HttpRouter subRouter2 = new HttpRouter();
+		subRouter2.register("/", Subrouter2Controller.class);
+		register("sub-router-2", subRouter2);
 		
 		registerErrorController(TestErrorController.class);
 	}

@@ -23,7 +23,7 @@
 	</dependency>
 	<dependency>
 	  <groupId>io.github.jirkasa</groupId>
-	  <artifactId>servlet-router</artifactId>
+	  <artifactId>servlet-router-for-testing</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	</dependency>
   </dependencies>
